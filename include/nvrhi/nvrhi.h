@@ -74,7 +74,7 @@ namespace nvrhi
     static constexpr uint32_t c_MaxViewports = 16;
     static constexpr uint32_t c_MaxVertexAttributes = 16;
     static constexpr uint32_t c_MaxBindingLayouts = 8;
-    static constexpr uint32_t c_MaxBindlessRegisterSpaces = 16;
+    static constexpr uint32_t c_MaxBindlessRegisterSpaces = 32;
     static constexpr uint32_t c_MaxVolatileConstantBuffersPerLayout = 6;
     static constexpr uint32_t c_MaxVolatileConstantBuffers = 32;
     static constexpr uint32_t c_MaxPushConstantSize = 128; // D3D12: root signature is 256 bytes max., Vulkan: 128 bytes of push constants guaranteed
