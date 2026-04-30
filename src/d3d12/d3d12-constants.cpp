@@ -272,6 +272,7 @@ namespace nvrhi::d3d12
         if ((stateBits & ResourceStates::OpacityMicromapWrite) != 0) result |= D3D12_RESOURCE_STATE_RAYTRACING_ACCELERATION_STRUCTURE;
         if ((stateBits & ResourceStates::ConvertCoopVecMatrixInput) != 0) result |= D3D12_RESOURCE_STATE_NON_PIXEL_SHADER_RESOURCE;
         if ((stateBits & ResourceStates::ConvertCoopVecMatrixOutput) != 0) result |= D3D12_RESOURCE_STATE_UNORDERED_ACCESS;
+        if ((stateBits & ResourceStates::NonPixelShaderResource) != 0) result |= D3D12_RESOURCE_STATE_NON_PIXEL_SHADER_RESOURCE;
 
         return result;
     }
