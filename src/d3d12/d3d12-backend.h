@@ -526,7 +526,7 @@ namespace nvrhi::d3d12
     {
     public:
         BindlessLayoutDesc desc;
-        static_vector<D3D12_DESCRIPTOR_RANGE1, 32> descriptorRanges;
+        static_vector<D3D12_DESCRIPTOR_RANGE1, 64> descriptorRanges;
         D3D12_ROOT_PARAMETER1 rootParameter{};
 
         BindlessLayout(const BindlessLayoutDesc& desc);
